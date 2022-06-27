@@ -20,6 +20,22 @@ def swap_elements(array, index_1, index_2):
 
 	return array
 
+def initialized_min_heap(array):
+	# Returns the beginning of a min_heap
+	# returns a list where the first element is the smallest value, and the rest of the elements
+	# are simply the unsorted rest of the original list
+
+	min_heap = []
+	min_heap.append(min(array))
+
+	index_to_skip = array.index(min_heap[0])
+
+	for index in range(len(array)):
+		if not index = index_to_skip:
+			min_heap.append(array[index])
+
+	return min_heap
+
 
 
 
