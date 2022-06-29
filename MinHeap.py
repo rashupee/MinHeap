@@ -35,17 +35,14 @@ def float_min_to_top(array):
 	return array
 
 
-def sorted(array):
-	answer=[]
+def heap_sorted(array):
+	answer = []
 	for layer in range(len(array)-1, -1, -1):
 		answer.append(float_min_to_top(array)[0])
 		array[0] = array[len(array)-1]
 		array.pop()
 
 	return answer
-
-
-
 
 
 
